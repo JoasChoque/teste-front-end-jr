@@ -1,0 +1,104 @@
+@import 'http://fonts.googleapis.com/css?family=Poppins:wght@400;500;600';
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  width: 1440px;
+}
+
+span {
+  color: #f71963;
+}
+
+.nav-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-icons img {
+  padding: 10px;
+}
+
+.header-container {
+  width: 1280px;
+  height: 144px;
+  position: absolute;
+  left: 86px;
+  top: 0px;
+}
+.header-container-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 119px;
+}
+.header-container-info-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  font-weight: 600;
+  font-size: 12px;
+  color: #9f9f9f;
+  font-family: "Poppins", sans-serif;
+  padding: 6px 0;
+}
+.header-container nav {
+  border-top: 1px solid #f0f0f0;
+  border-bottom: 1px solid #f0f0f0;
+  width: 1280px;
+  min-height: 72px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+.header-container nav input {
+  width: 657px;
+  height: 48px;
+  border-radius: 10px;
+  background-color: #f6f5f2;
+  border: none;
+}
+.header-container nav input::-webkit-input-placeholder {
+  font-family: "Poppins", sans-serif;
+  padding-left: 24px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.header-container-list {
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-container-list ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  box-shadow: 0px 8px 16px rgba(57, 48, 19, 0.12);
+  width: 1280px;
+  justify-content: space-around;
+}
+.header-container-list ul li {
+  list-style: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 11px 0;
+}
+.header-container-list ul li img {
+  margin-right: 13.5px;
+}
+.header-container-list ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: #9f9f9f;
+}
+
+/*# sourceMappingURL=App.css.map */
