@@ -12,6 +12,7 @@ body
     background-color: variables.$primary-color
     font-family: 'Poppins', sans-serif
     width: 1440px
+    margin: 0 auto
 
 span
     color: variables.$secondary-color
@@ -25,9 +26,9 @@ span
 .header-container
     width: 1280px
     height: 144px
-    position: absolute
     left: 86px
     top: 0px
+    margin: 0 86px
 
     &-info
         @include mixins.flex-center
@@ -70,7 +71,7 @@ span
 
         ul
             @include mixins.flex-center
-            position: absolute
+
             box-shadow: 0px 8px 16px rgba(57, 48, 19, 0.12)
             width: 1280px
             justify-content: space-around
@@ -88,4 +89,65 @@ span
                     text-decoration: none
                     font-weight: 600
                     color: variables.$gray-color
-        
+
+main
+    .main-background-image
+        width: 1440px
+        height: 395px
+        background-image: url('./assets/img/ofertas.jpg')
+        background-repeat: no-repeat
+        background-size: cover
+        opacity: 0.8
+
+        &:hover
+            opacity: 1
+            transition: .4s
+
+        &-title
+            @include mixins.text-bold
+            font-size: 48px
+            width: 822px
+            min-height: 128px
+            margin-left: 92px
+            padding-top: 52px
+            line-height: 72px
+
+        &-subtitle
+            @include mixins.text-bold
+            min-width: 389px
+            margin-left: 92px
+            font-size: 36px
+            line-height: 54px
+            margin-top: 16px
+
+        button
+            @include mixins.text-bold
+            border: none
+            background-color: variables.$secondary-color
+            border-radius: 5px
+            width: 227px
+            height: 60px
+            font-weight: 600
+            font-family: 'Poppins'
+            font-size: 18px
+            margin-top: 35px
+            margin-left: 90px
+            cursor: pointer
+
+    .main-options
+        margin: 34px auto 39px auto
+        display: flex
+        justify-content: space-around
+        &-card
+            @include mixins.card
+
+            img
+                padding: 34px
+            
+            p
+                text-align: center
+                color: variables.$secondary-color
+                font-size: 16px
+                font-weight: 500
+
+    

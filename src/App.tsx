@@ -53,6 +53,28 @@ function App() {
           </div>
         </div>
       </header>
+
+      <main>
+        <section className='main-background-image'>
+          <p className='main-background-image-title'>Venha conhecer nossas promoções</p>
+          <p className='main-background-image-subtitle'>50% Off nos produtos</p>
+
+          <button>Ver produto</button>
+        </section>
+
+        <section className='main-options'>
+          <div className='main-options-card'>
+            <img src="./src/assets/img/tablet-smartphone.svg" />
+            <p>Tecnologia</p>
+          </div>
+
+          <div className='main-options-card'>
+            <img src="./src/assets/img/tablet-smartphone.svg" />
+            <p>Tecnologia</p>
+          </div>
+
+        </section>
+      </main>
     </>
   )
 }
