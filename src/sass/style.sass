@@ -1,7 +1,7 @@
 @use 'variables'
 @use 'mixins'
 
-@import 'http://fonts.googleapis.com/css?family=Poppins:wght@400;500;600'
+@import 'http://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600;700&display=swap'
 
 *
     padding: 0
@@ -138,16 +138,252 @@ main
         margin: 34px auto 39px auto
         display: flex
         justify-content: space-around
+        
+        
         &-card
             @include mixins.card
+            margin-bottom: 39px
+            
 
             img
                 padding: 34px
             
             p
                 text-align: center
-                color: variables.$secondary-color
+                color: variables.$product-text-color-2
                 font-size: 16px
                 font-weight: 500
+                margin-top: 22px
+                margin-bottom: 39px 
 
-    
+.main-options-products
+    padding-top: 39px
+    @include mixins.flex-center
+    gap: 34px
+
+    &-gray-line
+        width: 360px
+        height: 0px
+        border: 1px solid variables.$line-gray
+
+        &-text
+            color: variables.$secondary-color
+            font-weight: 700
+            font-size: 30px
+            line-height: 45px
+
+.main-navbar-products
+        &-ul
+            @include mixins.flex-center
+            list-style: none
+            text-transform: uppercase
+
+            li
+                border: 1px solid #BDBDBD
+                gap: 10px
+                width: 211.5px
+                text-align: center
+                font-size: 16px
+
+                &:hover
+                    background-color: variables.$gray-light-color
+                   
+
+                a
+                    text-decoration: none
+                    color: #3b3b3b
+                    font-weight: 400
+
+                    &:hover
+                        color: variables.$secondary-color
+
+.main-products
+    margin: 20px auto
+    width: 1266px
+    height: 500px
+
+    &-card
+        width: 270px
+        height: 500px
+        border-radius: 10px
+        background-color: variables.$primary-color
+        box-shadow: 0px 3px 19px rgba(0, 0, 0, 0.22)
+
+        &-content
+            display: flex
+            justify-content: space-between
+            flex-direction: column
+            width: 247px
+            height: 445px
+
+            img
+                padding-top: 32px
+                margin: 0 auto
+
+            p
+                margin: 0 11px
+
+            &-description
+                font-weight: 300
+                font-size: 15px
+                color: variables.$product-text-color
+            
+            &-offer
+                font-weight: 400
+                font-size: 16px
+                color: #808080
+                text-decoration-line: line-through
+            
+            &-price
+                font-weight: 700
+                font-size: 20px
+                color: variables.$product-text-color
+            
+            &-parcela
+                font-weight: 400
+                font-size: 12px
+                color: variables.$product-text-color
+
+            span
+                margin: 0 11px
+                font-weight: 400
+                font-size: 12px
+            
+            button
+                width: 245px
+                height: 44px
+                margin: 12px 11px 0 11px
+                border-radius: 4px
+                border: none
+                background-color: variables.$secondary-color
+                text-transform: uppercase
+                font-weight: 700
+                color: variables.$primary-color
+                cursor: pointer
+
+.main-parceiros
+    @include mixins.flex-center
+    justify-content: space-around
+    &-card
+        width: 574px
+        height: 350px
+        background-image: url(./assets/img/parceiros.png)
+        background-repeat: no-repeat
+        background-size: cover
+        border-radius: 20px
+
+        &-content
+            margin-left: 39px
+            padding-top: 114px
+
+            button
+                margin-top: 32px
+            
+            &-title
+                color: variables.$primary-color
+                font-weight: 700
+                font-size: 40px
+            
+            &-description
+                color: variables.$primary-color
+                font-size: 16px
+                width: 186px
+                margin-top: 9px
+            
+            button
+                border: none
+                background-color: variables.$secondary-color
+                width: 135px
+                height: 48px
+                border-radius: 10px
+                color: variables.$primary-color
+                font-size: 16px
+                font-weight: 900
+                text-transform: uppercase
+                line-height: 24px
+
+.main-options-products-text
+    display: flex
+    flex-direction: column
+    text-align: center
+
+    &-sub
+        font-weight: 700
+        font-size: 15px
+        color: variables.$product-text-color
+
+.main-produtos
+    @include mixins.flex-center
+    justify-content: space-evenly
+    margin-top: 69px
+        
+    &-card
+        width: 589px
+        height: 284px
+        border-radius: 10px
+        background-image: url(./assets/img/parceiros.png)
+        background-repeat: no-repeat
+        background-size: cover
+
+        &-content
+            margin-left: 39px
+            padding-top: 48px
+
+            button
+                margin-top: 32px
+            
+            &-title
+                color: variables.$primary-color
+                font-weight: 700
+                font-size: 40px
+            
+            &-description
+                color: variables.$primary-color
+                font-size: 16px
+                width: 186px
+                margin-top: 9px
+            
+            button
+                border: none
+                background-color: variables.$secondary-color
+                width: 135px
+                height: 48px
+                border-radius: 10px
+                color: variables.$primary-color
+                font-size: 16px
+                font-weight: 900
+                text-transform: uppercase
+                line-height: 24px
+
+.main-marcas
+    width: 1250px
+    height: 331px
+    @include mixins.flex-center
+    flex-direction: column
+    margin: 0 auto
+    margin-top: 155px
+
+    &-title
+        font-weight: 700
+        font-size: 30px
+        color: variables.$secondary-color
+        margin-bottom: 52px
+        
+    &-imagens
+        width: 211px
+        height: 211px
+        border-radius: 50%
+        box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.13)
+        
+        img
+            width: 172px
+            height: 62px
+            margin: 74px 20px
+            
+
+.main-marcas-group
+    display: flex
+    width: 1250px
+    height: 234px
+    justify-content: space-around
+

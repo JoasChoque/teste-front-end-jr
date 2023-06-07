@@ -45,10 +45,10 @@ function App() {
               <li><a href="#">ofertas do dia</a></li>
               <li>
                 <a href="#">
-                  <img src="./src/assets/icons/crown.svg"/>
+                  <img src="./src/assets/icons/crown.svg" />
                   assinatura
                 </a>
-                </li>
+              </li>
             </ul>
           </div>
         </div>
@@ -69,12 +69,181 @@ function App() {
           </div>
 
           <div className='main-options-card'>
-            <img src="./src/assets/img/tablet-smartphone.svg" />
-            <p>Tecnologia</p>
+            <img src="./src/assets/img/supermercado.svg" />
+            <p>Supermercado</p>
           </div>
 
+          <div className='main-options-card'>
+            <img src="./src/assets/img/whiskey.svg" />
+            <p>Bebidas</p>
+          </div>
+
+          <div className='main-options-card'>
+            <img src="./src/assets/img/ferramentas.svg" />
+            <p>Ferramentas</p>
+          </div>
+
+          <div className='main-options-card'>
+            <img src="./src/assets/img/saude.svg" />
+            <p>Saúde</p>
+          </div>
+
+          <div className='main-options-card'>
+            <img src="./src/assets/img/esportes.svg" />
+            <p>Esportes e Fitness</p>
+          </div>
+
+          <div className='main-options-card'>
+            <img src="./src/assets/img/moda.svg" />
+            <p>Moda</p>
+          </div>
+        </section>
+
+        <section className="main-options-products">
+          <div className="main-options-products-gray-line"></div>
+          <p className='main-options-products-gray-line-text'>Produtos Relacionados</p>
+          <div className='main-options-products-gray-line'></div>
+        </section>
+
+        <section className='main-navbar-products'>
+          <ul className='main-navbar-products-ul'>
+            <li><a href="#">celular</a></li>
+            <li><a href="#">acessórios</a></li>
+            <li><a href="#">tablets</a></li>
+            <li><a href="#">notebooks</a></li>
+            <li><a href="#">tvs</a></li>
+            <li><a href="#">ver todos</a></li>
+          </ul>
+        </section>
+
+        <section className="main-products">
+          <div className='main-products-card'>
+            <div className='main-products-card-content'>
+              <img src="./src/assets/img/celular.png" />
+              <p className='main-products-card-content-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p className='main-products-card-content-offer'>R$ 30,90</p>
+              <p className='main-products-card-content-price'>R$ 28,90</p>
+              <p className='main-products-card-content-parcela'>ou 2x de R$ 49,95 sem juros</p>
+              <span>Frete grátis</span>
+              <button>comprar</button>
+            </div>
+          </div>
+        </section>
+
+        <section className="main-parceiros">
+          <div className='main-parceiros-card'>
+            <div className='main-parceiros-card-content'>
+              <p className='main-parceiros-card-content-title'>Parceiros</p>
+              <p className='main-parceiros-card-content-description'>Lorem ipsum dolor sit amet, consectetur</p>
+              <button>confira</button>
+            </div>
+          </div>
+
+          <div className='main-parceiros-card'>
+            <div className='main-parceiros-card-content'>
+              <p className='main-parceiros-card-content-title'>Produtos</p>
+              <p className='main-parceiros-card-content-description'>Lorem ipsum dolor sit amet, consectetur</p>
+              <button>confira</button>
+            </div>
+          </div>
+        </section>
+
+        <section className="main-options-products">
+          <div className="main-options-products-gray-line"></div>
+          <div className='main-options-products-text'>
+            <p className='main-options-products-gray-line-text'>Produtos Relacionados</p>
+            <p className='main-options-products-text-sub'>Ver todos</p>
+          </div>
+          <div className='main-options-products-gray-line'></div>
+        </section>
+
+        <section className="main-products">
+          <div className='main-products-card'>
+            <div className='main-products-card-content'>
+              <img src="./src/assets/img/celular.png" />
+              <p className='main-products-card-content-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p className='main-products-card-content-offer'>R$ 30,90</p>
+              <p className='main-products-card-content-price'>R$ 28,90</p>
+              <p className='main-products-card-content-parcela'>ou 2x de R$ 49,95 sem juros</p>
+              <span>Frete grátis</span>
+              <button>comprar</button>
+            </div>
+          </div>
+        </section>
+
+        <section className="main-produtos">
+          <div className='main-produtos-card'>
+            <div className='main-produtos-card-content'>
+              <p className='main-produtos-card-content-title'>Produtos</p>
+              <p className='main-produtos-card-content-description'>Lorem ipsum dolor sit amet, consectetur</p>
+              <button>confira</button>
+            </div>
+          </div>
+
+          <div className='main-produtos-card'>
+            <div className='main-produtos-card-content'>
+              <p className='main-produtos-card-content-title'>Produtos</p>
+              <p className='main-produtos-card-content-description'>Lorem ipsum dolor sit amet, consectetur</p>
+              <button>confira</button>
+            </div>
+          </div>
+        </section>
+
+        <section className='main-marcas'>
+          <div className='main-marcas-title'>
+            <p>Navegue por marcas</p>
+          </div>
+
+          <div className='main-marcas-group'>
+          <div className='main-marcas-imagens'>
+            <img src="./src/assets/img/vtex.svg" alt="vtex logo" />
+          </div>
+
+          <div className='main-marcas-imagens'>
+            <img src="./src/assets/img/vtex.svg" alt="vtex logo" />
+          </div>
+
+          <div className='main-marcas-imagens'>
+            <img src="./src/assets/img/vtex.svg" alt="vtex logo" />
+          </div>
+
+          <div className='main-marcas-imagens'>
+            <img src="./src/assets/img/vtex.svg" alt="vtex logo" />
+          </div>
+
+          <div className='main-marcas-imagens'>
+            <img src="./src/assets/img/vtex.svg" alt="vtex logo" />
+          </div>
+          </div>
+        </section>
+
+        <section className="main-options-products">
+          <div className="main-options-products-gray-line"></div>
+          <div className='main-options-products-text'>
+            <p className='main-options-products-gray-line-text'>Produtos Relacionados</p>
+            <p className='main-options-products-text-sub'>Ver todos</p>
+          </div>
+          <div className='main-options-products-gray-line'></div>
+        </section>
+
+        <section className="main-products">
+          <div className='main-products-card'>
+            <div className='main-products-card-content'>
+              <img src="./src/assets/img/celular.png" />
+              <p className='main-products-card-content-description'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p className='main-products-card-content-offer'>R$ 30,90</p>
+              <p className='main-products-card-content-price'>R$ 28,90</p>
+              <p className='main-products-card-content-parcela'>ou 2x de R$ 49,95 sem juros</p>
+              <span>Frete grátis</span>
+              <button>comprar</button>
+            </div>
+          </div>
         </section>
       </main>
+
+      <footer>
+
+      </footer>
     </>
   )
 }
